@@ -12,7 +12,7 @@ export const ViewAll: FC<Props> = ({ Href }) => {
   return (
     <Center>
       <Link href={Href} prefetch={false}>
-        <Button color={dark ? 'yellow' : 'black'} radius="xl" size="xs">
+        <Button color={dark ? 'pink' : 'dark'} radius="xl" size="xs">
           <a>View All</a>
         </Button>
       </Link>

@@ -9,7 +9,7 @@ export const DarkSwitch: FC = () => {
   return (
     <ActionIcon
       variant="outline"
-      color={dark ? 'yellow' : 'black'}
+      color={dark ? 'pink' : 'dark'}
       onClick={() => toggleColorScheme()}
       title="Toggle color scheme"
       className="mx-3"

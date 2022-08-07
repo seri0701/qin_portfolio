@@ -17,7 +17,7 @@ export const HeaderLine: FC = () => {
             <Space w="xl" className="mx-20" />
           </Grid.Col>
           <Grid.Col sm={2} xs={12}>
-            <div className="my-6 items-center">
+            <div className="my-6 flex items-center">
               <BrandTwitter color={'white'} />
               <BrandFacebook color={'white'} />
               <Rss color={'white'} />

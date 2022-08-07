@@ -22,42 +22,42 @@ export const PFCardCom: FC = () => {
 
 export const data = [
   {
-    id: 'id1',
+    id: 'id 1',
     src: 'vercel.svg',
     title: 'test title 1',
     description:
       'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ',
   },
   {
-    id: 'id2',
+    id: 'id 2',
     src: 'vercel.svg',
     title: 'test title 2',
     description:
       'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ',
   },
   {
-    id: 'id3',
+    id: 'id 3',
     src: 'vercel.svg',
     title: 'test title 1',
     description:
       'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ',
   },
   {
-    id: 'id4',
+    id: 'id 4',
     src: 'vercel.svg',
     title: 'test title 2',
     description:
       'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ',
   },
   {
-    id: 'id4',
+    id: 'id 5',
     src: 'vercel.svg',
     title: 'test title 2',
     description:
       'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ',
   },
   {
-    id: 'id4',
+    id: 'id 6',
     src: 'vercel.svg',
     title: 'test title 2',
     description:

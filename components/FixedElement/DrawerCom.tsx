@@ -1,8 +1,9 @@
 import { FC, useState } from 'react'
-import { Anchor, Burger, Drawer } from '@mantine/core'
+import { Anchor, Burger, Drawer, useMantineTheme } from '@mantine/core'
 
 export const DrawerCom: FC = () => {
   const [opened, setOpened] = useState(false)
+  const theme = useMantineTheme()
   return (
     <div>
       <Burger
@@ -24,19 +25,23 @@ export const DrawerCom: FC = () => {
         padding="xl"
         size="xl"
         className="bg-pink-600"
-        color="white"
+        overlayColor={
+          theme.colorScheme === 'dark'
+            ? theme.colors.pink[9]
+            : theme.colors.pink[2]
+        }
       >
         <div className="m-3 flex flex-col text-3xl">
-          <Anchor href="/" weight={700} className=" text-white">
+          <Anchor href="/about" weight={700} className=" text-white">
             About
           </Anchor>
-          <Anchor href="/" weight={700} className=" text-white">
+          <Anchor href="/blog" weight={700} className=" text-white">
             Blog
           </Anchor>
-          <Anchor href="/" weight={700} className=" text-white">
+          <Anchor href="/portfolio" weight={700} className=" text-white">
             Portfolio
           </Anchor>
-          <Anchor href="/" weight={700} className=" text-white">
+          <Anchor href="/contact" weight={700} className=" text-white">
             Contact
           </Anchor>
         </div>

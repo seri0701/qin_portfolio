@@ -5,7 +5,6 @@ import { Sun, MoonStars } from 'tabler-icons-react'
 export const DarkSwitch: FC = () => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme()
   const dark = colorScheme === 'dark'
-
   return (
     <ActionIcon
       variant="outline"

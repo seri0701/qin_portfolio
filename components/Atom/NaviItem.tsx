@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Anchor } from '@mantine/core'
+import { Anchor, useMantineColorScheme } from '@mantine/core'
 
 type Props = {
   Href: string
@@ -7,12 +7,14 @@ type Props = {
 }
 
 export const NaviItem: FC<Props> = ({ Href, Label }) => {
+  const { colorScheme } = useMantineColorScheme()
+  const dark = colorScheme === 'dark'
   return (
     <Anchor
       href={Href}
       className=" m-3 "
       weight={500}
-      color="dimmed"
+      color={dark ? 'dimmed' : 'dark'}
       sx={{
         '@media (max-width: 800px)': {
           display: 'none',

@@ -14,10 +14,10 @@ export const HeaderNavi: FC = () => {
           <TitleText />
         </Group>
         <Group spacing={3}>
-          <NaviItem Href="/" Label="About" />
-          <NaviItem Href="/" Label="Blog" />
-          <NaviItem Href="/" Label="Prortfolio" />
-          <NaviItem Href="/" Label="Contact" />
+          <NaviItem Href="/about" Label="About" />
+          <NaviItem Href="/blog" Label="Blog" />
+          <NaviItem Href="/portfolio" Label="Portfolio" />
+          <NaviItem Href="/contact" Label="Contact" />
           <DarkSwitch />
         </Group>
       </header>

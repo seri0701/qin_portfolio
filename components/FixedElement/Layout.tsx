@@ -20,7 +20,7 @@ export const Layout: FC<Props> = ({ children, title = 'blog' }) => {
       <HeaderNavi />
       {router.pathname === '/' ? <HeaderLine /> : null}
       <div className="flex min-h-screen">
-        <div className="mx-auto min-h-screen max-w-3xl flex-col items-center px-2">
+        <div className="mx-auto min-h-screen max-w-4xl flex-col items-center px-2">
           <main>{children}</main>
           <FooterCom />
         </div>

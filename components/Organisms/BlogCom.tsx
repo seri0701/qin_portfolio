@@ -1,6 +1,6 @@
 import { FC } from "react"
 import { BlogM } from "components/Molecules/BlogM"
-import { useQueryPosts } from "hooks/useQyeryPost"
+import { useQueryPosts } from "hooks/useQueryPost"
 
 export const BlogCom: FC = () => {
   const { data } = useQueryPosts()

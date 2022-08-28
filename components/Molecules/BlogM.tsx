@@ -1,12 +1,12 @@
-import { FC } from 'react'
-import { Box, Text, Title } from '@mantine/core'
+import { FC } from "react"
+import { Box, Text, Title } from "@mantine/core"
 
 type Props = {
   title: string
-  description: string
+  body: string
 }
 
-export const BlogM: FC<Props> = ({ title, description }) => {
+export const BlogM: FC<Props> = ({ title, body }) => {
   return (
     <>
       <Box>
@@ -14,7 +14,7 @@ export const BlogM: FC<Props> = ({ title, description }) => {
           {title}
         </Title>
         <Text size="xs" className="mb-2">
-          {description}
+          {body}
         </Text>
       </Box>
     </>

@@ -4,9 +4,6 @@ import { Layout } from "components/FixedElement/Layout"
 
 import { Center, Stack, Textarea, TextInput, Button } from "@mantine/core"
 import { useForm } from "@mantine/form"
-// import { Button } from "src/components/Button";
-// import { Section } from "src/components/Section";
-// import { LayoutWithHero } from "src/layouts/LayoutWithHero";
 
 const Contact: NextPage = () => {
   const form = useForm({
@@ -55,9 +52,3 @@ const Contact: NextPage = () => {
 }
 
 export default Contact
-
-// <LayoutWithHero>
-//   <Section title="Contact" mt={40}>
-
-//   </Section>
-// </LayoutWithHero>

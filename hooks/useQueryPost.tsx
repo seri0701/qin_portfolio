@@ -1,6 +1,6 @@
 import { MicroCMSListResponse } from "microcms-js-sdk"
-import { client } from "libs/client"
 import { useQuery } from "@tanstack/react-query"
+import { client } from "libs/client"
 
 //ブログ API
 export type Post = {
@@ -24,7 +24,7 @@ export const useQueryPosts = () => {
 //ポートフォリオ API
 export type PoFo = {
   id: string
-  url: any
+  image: { url: string }
   title: string
   body: string
   publishedAt: string

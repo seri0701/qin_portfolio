@@ -1,5 +1,4 @@
 import { client } from "libs/client"
-// import { createClient } from "microcms-js-sdk"
 import type { NextApiRequest, NextApiResponse } from "next"
 
 type Contact = {
@@ -14,14 +13,6 @@ type ContactRecord = {
   name: string
   message: string
 }
-// const getClient = () => {
-//   console.log("seriblog")
-//   console.log(process.env.NEXT_PUBLIC_MICROCMS_API_KEY)
-//   return createClient({
-//     serviceDomain: "seriblog",
-//     apiKey: process.env.NEXT_PUBLIC_MICROCMS_API_KEY!,
-//   })
-// }
 
 export const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   // API RouteはPOSTできる権限の鍵を隠蔽したいだけのため、バリデーションは一旦オミット
@@ -29,9 +20,8 @@ export const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   res.status(200).send({})
 }
 export const insertContact = async (contactContent: Omit<Contact, "id">) => {
-  // const client = getClient()
   await client.create<Omit<ContactRecord, "id">>({
-    endpoint: "contacts",
+    endpoint: "contact",
     content: contactContent,
   })
 }

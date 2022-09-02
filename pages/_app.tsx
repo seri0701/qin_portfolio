@@ -7,6 +7,7 @@ import {
   ColorScheme,
 } from "@mantine/core"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools"
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -44,6 +45,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
         </MantineProvider>
       </ColorSchemeProvider>
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   )
 }

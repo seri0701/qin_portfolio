@@ -1,6 +1,6 @@
 import { FC } from "react"
 import { Title } from "@mantine/core"
-import { PFCardCom } from "components/Organisms/PFCardCom"
+import { PFCardCom } from "components/Organisms/PFCardCom2"
 
 export const PortFolioT: FC = () => {
   return (

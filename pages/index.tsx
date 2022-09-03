@@ -1,12 +1,12 @@
-import Head from 'next/head'
-import type { NextPage } from 'next'
-import { Layout } from 'components/FixedElement/Layout'
-import { BlogT } from 'components/Template/BlogT'
-import { PortFolioT } from 'components/Template/PortFolioT'
-import { GitHubT } from 'components/Template/GitHubT'
-import { TwitterT } from 'components/Template/TwitterT'
-import { Grid } from '@mantine/core'
-import { ViewAll } from 'components/Atom/ViewAll'
+import Head from "next/head"
+import type { NextPage } from "next"
+import { Layout } from "components/FixedElement/Layout"
+import { BlogT } from "components/Template/BlogT"
+import { PortFolioT } from "components/Template/PortFolioT"
+import { GitHubT } from "components/Template/GitHubT"
+import { TwitterT } from "components/Template/TwitterT"
+import { Grid } from "@mantine/core"
+import { ViewAll } from "components/Atom/ViewAll"
 
 const Home: NextPage = () => {
   return (
@@ -16,9 +16,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <BlogT />
-      <ViewAll Href="/" />
+      <ViewAll Href="/blog" />
       <PortFolioT />
-      <ViewAll Href="/" />
+      <ViewAll Href="/portfolio" />
       <Grid>
         <Grid.Col xs={12} sm={6}>
           <GitHubT />

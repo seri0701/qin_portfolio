@@ -9,7 +9,7 @@ export const BlogCom: FC = () => {
   return (
     <>
       {data?.contents.map((item) => (
-        <BlogM key={item.id} title={item.title} body={item.body} />
+        <BlogM key={item.id} id={item.id} title={item.title} body={item.body} />
       ))}
     </>
   )

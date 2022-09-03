@@ -1,7 +1,6 @@
 import { FC } from "react"
 import { Space, Title } from "@mantine/core"
 import { BlogCom } from "components/Organisms/BlogCom"
-import { Spinner } from "components/Atom/Spinner"
 
 export const BlogT: FC = () => {
   return (
@@ -19,7 +18,6 @@ export const BlogT: FC = () => {
         </Title>
         <Space h="md" />
         <BlogCom />
-        <Spinner />
       </div>{" "}
       <Space h="md" />
     </main>
